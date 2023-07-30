@@ -85,7 +85,8 @@ html{
     right:0;
     z-index: 1; 
     /* Cái z-index kết hợp với cái position:fixed làm cái header luôn đứng đầu */
-    
+    overflow: hidden;
+    /* overflow này để ẩn mấy cái tràn ra khỏi thẻ cha */
 
 }
 #nav{
@@ -144,6 +145,7 @@ html{
 #nav .nav-arrow-down{
     font-size: 12px;
 }
+#header .menu-mobile-btn,
 #header .search-btn{
     float:right;
     cursor:pointer;
@@ -152,6 +154,14 @@ html{
 #header .search-btn:hover{
     background-color: #f44336;
 }
+#header .menu-mobile-btn:hover{
+    color:#000;
+    background-color: #ccc;
+}
+#header .menu-mobile-btn:hover .menu-icon{
+    color:#000;
+}
+#header .menu-icon,
 #header .search-icon{
     font-size: 20px;
     color:#fff;
@@ -188,9 +198,12 @@ html{
 /* content */
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 #content .section-heading{
     font-size: 30px;
