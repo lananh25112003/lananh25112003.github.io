@@ -85,7 +85,7 @@ html{
     right:0;
     z-index: 1; 
     /* Cái z-index kết hợp với cái position:fixed làm cái header luôn đứng đầu */
-    overflow: hidden;
+    /* overflow: hidden; */
     /* overflow này để ẩn mấy cái tràn ra khỏi thẻ cha */
 
 }
@@ -277,7 +277,7 @@ html{
 }
 /* Place */
 .place-list{
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .place-img{
